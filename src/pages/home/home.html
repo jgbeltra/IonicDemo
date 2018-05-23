@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <button ion-item *ngFor="let note of notes" (click)="itemSelected(note)">
+      {{ note.title }}
+    </button>  
+  </ion-list>
+</ion-content>
